@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+  background-color: #000000;
+}
+
+p{
+  font-size: 12px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allows sections to wrap on smaller screens */
+  margin-bottom: 300px;
+  background-color: red;
+}
+
+.footer-section {
+  flex: 1 1 200px; /* Flexbox allows responsive design */
+  margin: 10px;
+
+}
+.footer-section1{
+  width:20%;
+  justify-content: center;
+  text-align: center;
+}
+.footer-section1 img{
+  margin-bottom: 30px;
+  padding: 20px;
+}
+.footer-section2{
+  width:80%;
+  display: flex;
+  justify-content: center;
+}
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: #4a90e2; /* Heading color */
+}
+
+.footer-section ul {
+  list-style-type: none; /* Remove bullet points */
+}
+
+.footer-section li {
+  margin: 5px 0;
+  font-size: 14px;
+  color: #f0f0f0; /* Link color */
+}
+
+.footer-bottom {
+  border-top: 1px solid #333; /* Optional: Add a separator */
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-bottom p {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center; /* Center the social links */
+  gap: 5px; /* Space between icons */
+}
+
+.social-icon {
+  color: #4a90e2; /* Social icon color */
+  text-decoration: none; /* Remove underline */
+  font-size: 14px;
+}
+
+.social-icon:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+footer {
+  position: relative;
+  width: 100%;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
+  padding: 20px;
+  text-align: center;
+  color: white; /* Ensure text stands out against the gradient */
+  
+}
+
+.footer-content {
+  margin-top:0;
+  transition: height 0.5s ease;
+  padding: 0px 68px;
+  text-align: justify;
+  margin-bottom: 30px;
+  background-image: url("Images/svg/10001.svg");
+  
+}
+#footerText {
+  margin-bottom: 60px;
+  
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 12px;
+ 
+
+}
+
+footer h6{
+  font-size: 14px;
+  margin-bottom: 17.7px;
+  font-weight: 400;
+  letter-spacing: 0.7px;
+}
+
+#dots {
+  display: inline; /* Display dots before the hidden text */
+}
+
+#moreText {
+  display: none; /* Hide the extra text by default */
+}
+
+#readMoreLink {
+  text-decoration: underline;
+  color: inherit; /* Keep the link color the same as the paragraph */
+  cursor: pointer;
+  display: inline; /* Ensure the link stays inline with the paragraph */
+}
+
+#readMoreLink:hover {
+  text-decoration: none; /* Optional: Remove underline on hover */
+}

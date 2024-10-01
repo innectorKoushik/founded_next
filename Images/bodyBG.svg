@@ -1,0 +1,36 @@
+<svg width="4182" height="5508" viewBox="0 0 4182 5508" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_f_418_90)">
+<circle cx="3192" cy="1125" r="290" fill="#E8C2FF"/>
+</g>
+<g filter="url(#filter1_f_418_90)">
+<circle cx="1381.5" cy="750.5" r="250.5" fill="#ACFDEC" fill-opacity="0.6"/>
+</g>
+<g filter="url(#filter2_f_418_90)">
+<circle cx="1123.5" cy="2052.5" r="404.5" fill="#FFB09E" fill-opacity="0.5"/>
+</g>
+<g filter="url(#filter3_f_418_90)">
+<circle cx="1235.5" cy="4272.5" r="535.5" fill="#EDD7FF" fill-opacity="0.6"/>
+</g>
+<defs>
+<filter id="filter0_f_418_90" x="2202" y="135" width="1980" height="1980" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="350" result="effect1_foregroundBlur_418_90"/>
+</filter>
+<filter id="filter1_f_418_90" x="631" y="0" width="1501" height="1501" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="250" result="effect1_foregroundBlur_418_90"/>
+</filter>
+<filter id="filter2_f_418_90" x="219" y="1148" width="1809" height="1809" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="250" result="effect1_foregroundBlur_418_90"/>
+</filter>
+<filter id="filter3_f_418_90" x="0" y="3037" width="2471" height="2471" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="350" result="effect1_foregroundBlur_418_90"/>
+</filter>
+</defs>
+</svg>
