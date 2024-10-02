@@ -139,6 +139,10 @@ footer h6{
   letter-spacing: 0.7px;
 }
 
+footer a{
+  text-decoration: underline;
+}
+
 #dots {
   display: inline; /* Display dots before the hidden text */
 }
@@ -156,4 +160,95 @@ footer h6{
 
 #readMoreLink:hover {
   text-decoration: none; /* Optional: Remove underline on hover */
+}
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column; /* Stack sections vertically */
+    margin-bottom: 100px; /* Reduce bottom margin */
+  }
+
+  .footer-section {
+    flex: 1 1 100%; /* Make sections full width on small screens */
+    margin: 10px 0; /* Adjust margin for spacing */
+  }
+
+  .footer-section1 {
+    width: 100%; /* Ensure full width for section 1 */
+  }
+
+  .footer-section2 {
+    width: 100%; /* Ensure full width for section 2 */
+    flex-direction: column; /* Stack items vertically */
+  }
+  
+  .footer-content {
+  margin-top:0;
+  transition: height 0.5s ease;
+  padding: 0px 0px;
+  text-align: justify;
+  margin-bottom: 30px;
+  background-image: url("Images/svg/10001.svg");
+  
+}
+
+  p {
+    font-size: 10px; /* Adjust font size for better readability */
+  }
+
+  footer h6 {
+    font-size: 12px; /* Adjust heading size */
+  }
+
+  #footerText {
+    font-size: 14px; /* Adjust text size */
+    margin-bottom: 30px; /* Adjust bottom margin */
+  }
+}
+
+/* Tablet Styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .footer-container {
+    flex-direction: row; /* Use row layout on tablets */
+  }
+
+  .footer-section {
+    flex: 1 1 45%; /* Allow two sections side by side */
+    margin: 15px; /* Add some margin between sections */
+  }
+
+  p {
+    font-size: 11px; /* Adjust font size */
+  }
+
+  footer h6 {
+    font-size: 13px; /* Adjust heading size */
+  }
+
+  #footerText {
+    font-size: 16px; /* Adjust text size */
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1025px) {
+  .footer-container {
+    margin-bottom: 300px; /* Maintain larger margin for larger screens */
+  }
+
+  .footer-section {
+    flex: 1 1 30%; /* Allow more space for sections on large screens */
+  }
+
+  p {
+    font-size: 12px; /* Reset to default size */
+  }
+
+  footer h6 {
+    font-size: 14px; /* Reset to default size */
+  }
+
+  #footerText {
+    font-size: 12px; /* Reset to default size */
+  }
 }
