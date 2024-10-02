@@ -23,7 +23,21 @@ p{
   justify-content: space-between;
   flex-wrap: wrap; /* Allows sections to wrap on smaller screens */
   margin-bottom: 300px;
-  background-color: red;
+}
+
+.video-background {
+  position: absolute;
+  margin-top: 10%;
+  width: 70%;
+  height: 100%;
+  z-index: -1; /* Ensures the video is behind the content */
+  
+}
+
+.background-video {
+  width: 100%;
+  height: auto;
+  position: absolute;
 }
 
 .footer-section {
@@ -44,6 +58,7 @@ p{
   width:80%;
   display: flex;
   justify-content: center;
+  
 }
 .footer-section h4 {
   margin-bottom: 10px;
