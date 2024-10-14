@@ -11,7 +11,34 @@ body {
   font-family: Arial, sans-serif;
   line-height: 1.6;
   overflow-x: hidden;
-  background-color: #000000;
+  background-color: black;
+}
+
+main{
+  height: 700vh;
+  background-color: #100a29;
+}
+footer {
+  margin-bottom: 0px;
+  position: relative;
+  width: 100%;
+  min-height:100vh;
+  padding: 15px;
+  text-align: center;
+  color: white; /* Ensure text stands out against the gradient */
+
+  
+}
+footer .background-video {
+  position: absolute;
+  top: 0; /* Stick the bottom of the video to the bottom of the parent */
+  left: 0;
+  width: 100%;
+  height: auto; /* Maintain the aspect ratio of the video */
+  z-index: -1; /* Ensure it's behind the footer content */
+  clip-path: inset(40% 0 0 0); /* Show only the top 60% of the video */
+  display: none;
+  
 }
 
 p{
@@ -25,44 +52,48 @@ p{
   margin-bottom: 300px;
 }
 
-.video-background {
-  position: absolute;
-  margin-top: 10%;
-  width: 70%;
-  height: 100%;
-  z-index: -1; /* Ensures the video is behind the content */
-  
-}
-
-.background-video {
-  width: 100%;
-  height: auto;
-  position: absolute;
-}
-
 .footer-section {
   flex: 1 1 200px; /* Flexbox allows responsive design */
   margin: 10px;
 
 }
-.footer-section1{
+.footer-container .footer-section1{
   width:20%;
-  justify-content: center;
-  text-align: center;
+  padding-left: 10px;
+  text-align: left;
+  align-items: left;
 }
-.footer-section1 img{
-  margin-bottom: 30px;
-  padding: 20px;
+
+.footer-container .footer-section1 .social-links{
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+  padding-left: 0;
+ /* Allows sections to wrap on smaller screens */
+}
+.footer-container .footer-section1 .social-links img{
+  width: 40px;
+  height: 40px;
+}
+#logo{
+  width: 180px;
+  margin-top: 10px;
+  padding-left: 10px;
+}
+.footer-section1 p {
+  font-size: 15px;
+  font-weight: 540;
 }
 .footer-section2{
   width:80%;
   display: flex;
   justify-content: center;
+  text-align: left;
   
 }
 .footer-section h4 {
-  margin-bottom: 10px;
-  font-size: 18px;
+  margin-bottom: 22px;
+  font-size: 15px;
   color: #4a90e2; /* Heading color */
 }
 
@@ -71,8 +102,9 @@ p{
 }
 
 .footer-section li {
-  margin: 5px 0;
-  font-size: 14px;
+  margin: 10px 0;
+  font-size: 12px;
+  font-weight: 550;
   color: #f0f0f0; /* Link color */
 }
 
@@ -90,7 +122,8 @@ p{
 .social-links {
   display: flex;
   justify-content: center; /* Center the social links */
-  gap: 5px; /* Space between icons */
+  gap: 2px; /* Space between icons */
+  padding-left: 10px;
 }
 
 .social-icon {
@@ -103,16 +136,6 @@ p{
   text-decoration: underline; /* Underline on hover */
 }
 
-footer {
-  position: relative;
-  width: 100%;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #000 100%);
-  padding: 20px;
-  text-align: center;
-  color: white; /* Ensure text stands out against the gradient */
-  
-}
-
 .footer-content {
   margin-top:0;
   transition: height 0.5s ease;
@@ -122,24 +145,42 @@ footer {
   background-image: url("Images/svg/10001.svg");
   
 }
-#footerText {
-  margin-bottom: 60px;
-  
-  font-weight: 400;
-  line-height: 24px;
+ footer #footerText {
+  position: relative;
+  padding-top: 25px;
+  padding-left: 90px;
+  padding-right: 50px;
+  font-weight: 500;
+  line-height: 1.8; /* Better readability with line-height */
   font-size: 12px;
- 
-
+  word-spacing: 3px;
+  text-align: left;
+  color: #fff; 
 }
 
-footer h6{
+.footer-last h6{
+  position:relative;
+  bottom: -58px;
+  text-align: center;
   font-size: 14px;
-  margin-bottom: 17.7px;
-  font-weight: 400;
+  padding-bottom: 0px;
+  font-weight: 500;
   letter-spacing: 0.7px;
 }
 
+.footer-last {
+  position: relative; /* Positioning for absolutely positioned children */
+  overflow: hidden; /* Hides overflow from the video */
+  height: 30vh; /* Set this according to your layout needs */
+  margin-bottom: 0; /* Removes any bottom margin */
+  display: flex; /* Use flexbox for alignment */
+  flex-direction: column; /* Arrange children in a column */
+  justify-content: center; /* Center vertically */
+  align-items: flex-start; /* Align children to the start */
+  background-color: rgba(255, 0, 0, 0.8);
+}
 footer a{
+  padding-top: 40px;
   text-decoration: underline;
 }
 
@@ -161,6 +202,33 @@ footer a{
 #readMoreLink:hover {
   text-decoration: none; /* Optional: Remove underline on hover */
 }
+
+.faq-container {
+  height:5vh;
+  width:100%;
+  position: fixed;
+  bottom: 0px;
+  background-color: black;
+  padding-left:45px;
+  padding-bottom: 7px;
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  z-index: 20;
+}
+
+.close-btn {
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 20px;
+  color: white;
+}
+
+.close-btn:hover {
+  color: red;
+}
+
 /* Mobile Styles */
 @media (max-width: 768px) {
   .footer-container {
@@ -227,28 +295,5 @@ footer a{
 
   #footerText {
     font-size: 16px; /* Adjust text size */
-  }
-}
-
-/* Large Screens */
-@media (min-width: 1025px) {
-  .footer-container {
-    margin-bottom: 300px; /* Maintain larger margin for larger screens */
-  }
-
-  .footer-section {
-    flex: 1 1 30%; /* Allow more space for sections on large screens */
-  }
-
-  p {
-    font-size: 12px; /* Reset to default size */
-  }
-
-  footer h6 {
-    font-size: 14px; /* Reset to default size */
-  }
-
-  #footerText {
-    font-size: 12px; /* Reset to default size */
   }
 }

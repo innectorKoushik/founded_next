@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Footer Expandable Text</title>
+    <title>Foundednext</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
 <header>
-    <h1>Welcome to My Website</h1>
-    <p>This is a sample page to demonstrate the expandable text in the footer.</p>
+   
 </header>
 
 <main>
     <p>Content of the website goes here. Scroll down to view the footer section with a Read More link.</p>
 </main>
-
+<footer>
+    
 <div class="footer-container">
     <div class="footer-section1" id="footer-section1">
-        <img src="images/logo-white.svg" alt="Logo">
+        <img id="logo" src="images/logo-white.svg" alt="Logo">
         <div class="social-links">
             <a href="#" class="social-icon"><img src="images/discord.svg" alt="Discord"></a>
             <a href="#" class="social-icon"><img src="images/facebook.svg" alt="Facebook"></a>
@@ -32,13 +32,6 @@
     </div>
 
     <div class="footer-section2">
-        <div class="video-background">
-            <video autoplay muted loop class="background-video">
-                <source src="mp4/Globe Animation.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-
         <!-- Footer sections -->
         <div class="footer-section">
             <h4>Models</h4>
@@ -98,20 +91,29 @@
         </div>
     </div>
 </div>
-
-<footer>
-    <div class="footer-content" id="footerContent">
-        <p id="footerText">
-            The website https://fundednext.com is owned and operated by GrowthNext F.Z.C. registered in Executive Office No. 7, AI Robotics Hub, C1 Building, AFZ, Ajman, UAE, company no.: 28831. The FundedNext-Copyright © 2024 is a registered trademark owned by GrowthNext F.Z.C. Simulated trading operations are conducted on FundedNext's trading servers operated by <span id="dots">...</span>
-            
-            <span id="moreText">the company FundedNext Ltd, address: Bonovo Road, Fomboni, Island of Moheli, Comoros Union. Our Cyprus office, Incenteco Trading Limited, is situated at Pittalou 26, Laiki Leukothea, 3118, Agia Flakseos, Limassol, Cyprus. Corporate landline number: +35725255160 & Hong Kong office, FundedNext Limited is situated at 8/F, China Hong Kong Tower, 8-12 Hennessy Road, Wan Chai, Hong Kong.<br><br>
-            FundedNext is dedicated to the educational and evolutionary advancement of traders, offering a state-of-the-art simulation platform for skill assessment. Participants engage in intensive challenge phases, designed to identify and nurture trading talent. The most adept traders who pass the challenge phases are offered the opportunity to enter into a contract with a separate entity named GrowthNext Champions FZCO (Reg No: 35874), to work as market analysts where they get rewarded based on their achievements.<br><br>
-            The information on the Website is provided solely for analysis purposes and should not be construed as financial, investment, tax, or other advice. Nothing on the Website or in our Services represents a solicitation, advice, endorsement, or offer to purchase or sell stocks or other financial instruments by FundedNext, its agents, employees, contractors, or any connected entities. You are solely responsible for assessing the benefits and risks associated with the use of any information or other content on the Website. All investments include substantial risk, and an individual's investment decisions are solely his/her obligation. All information on the Website is provided “as is,” with no guarantee of completeness, accuracy, timeliness, or results obtained from its use, and without warranty of any kind, express or implied. FundedNext, or its partners, employees, or agents, shall not be responsible for any decision made or action taken in reliance on the information on the Website, or for any consequential, special, or similar damages, even if warned of the potential for such damages. Purchases should not be regarded as deposits. All program charges are utilized for working expenses including, but not limited to, staff, technology, and other business-related costs.</span>
-            <a href="javascript:void(0)" id="readMoreLink" onclick="toggleText()">Read More</a>
-          </p>
-        
-    </div>
+<video autoplay muted loop class="background-video">
+    <source src="mp4/Globe Animation.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+<div class="footer-last">
+    <p id="footerText">
+      The website https://fundednext.com is owned and operated by GrowthNext F.Z.C. registered in Executive Office No. 7, AI Robotics Hub, C1 Building, AFZ, Ajman, UAE, company no.: 28831. The FundedNext-Copyright © 2024 is a registered trademark owned by GrowthNext F.Z.C. Simulated trading operations are conducted on FundedNext's trading servers operated by
+      <span id="dots">...</span>
+      <span id="moreText" style="display: none;"> <!-- Hidden initially -->
+        the company FundedNext Ltd, address: Bonovo Road, Fomboni, Island of Moheli, Comoros Union. Our Cyprus office, Incenteco Trading Limited, is situated at Pittalou 26, Laiki Leukothea, 3118, Agia Flakseos, Limassol, Cyprus. Corporate landline number: +35725255160 & Hong Kong office, FundedNext Limited is situated at 8/F, China Hong Kong Tower, 8-12 Hennessy Road, Wan Chai, Hong Kong.<br><br>
+        FundedNext is dedicated to the educational and evolutionary advancement of traders, offering a state-of-the-art simulation platform for skill assessment. Participants engage in intensive challenge phases, designed to identify and nurture trading talent. The most adept traders who pass the challenge phases are offered the opportunity to enter into a contract with a separate entity named GrowthNext Champions FZCO (Reg No: 35874), to work as market analysts where they get rewarded based on their achievements.<br><br>
+        The information on the Website is provided solely for analysis purposes and should not be construed as financial, investment, tax, or other advice. Nothing on the Website or in our Services represents a solicitation, advice, endorsement, or offer to purchase or sell stocks or other financial instruments by FundedNext, its agents, employees, contractors, or any connected entities. You are solely responsible for assessing the benefits and risks associated with the use of any information or other content on the Website. All investments include substantial risk, and an individual's investment decisions are solely his/her obligation. All information on the Website is provided “as is,” with no guarantee of completeness, accuracy, timeliness, or results obtained from its use, and without warranty of any kind, express or implied. FundedNext, or its partners, employees, or agents, shall not be responsible for any decision made or action taken in reliance on the information on the Website, or for any consequential, special, or similar damages, even if warned of the potential for such damages. Purchases should not be regarded as deposits. All program charges are utilized for working expenses including, but not limited to, staff, technology, and other business-related costs.
+      </span>
+    </p>
+    <a href="javascript:void(0)" id="readMoreLink" onclick="toggleText()">Read More</a>
     <h6>FundedNext-Copyright © 2024</h6>
+  </div>
+<div id="faq-section" class="faq-container">
+    <p>Clients are provided with demo accounts that contain simulated funds for trading activities. Please note that all client trading operations are conducted in a simulated environment. More details can be found in the    </p>
+    <button id="faq-button">FAQs section.</button>
+    <span id="close-button" class="close-btn">&times;</span>
+</div>
+
 </footer>
 
 <script src="script.js"></script>
