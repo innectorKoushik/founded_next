@@ -18,6 +18,154 @@ main{
   height: 700vh;
   background-color: #100a29;
 }
+
+/*comparison sectionstarts here*/
+.comparison-section {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: rgba(255, 255, 255, 0.05); /* Transparent background */
+  border-radius: 10px;
+  overflow: hidden;
+  color:#f0f0f0;
+}
+
+.comparison-table th, 
+.comparison-table td {
+  padding: 15px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.comparison-table th {
+  background-color: rgba(255, 255, 255, 0.1);
+  font-size: 18px;
+}
+
+.comparison-table td {
+  font-size: 16px;
+}
+
+.comparison-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.comparison-table tbody tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.02);
+}
+
+.comparison-table tbody tr td:first-child {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.comparison-table th:first-child {
+  border-top-left-radius: 10px;
+}
+
+.comparison-table th:last-child {
+  border-top-right-radius: 10px;
+}
+/*Comparitions section Ends here*/
+/* why strat*/
+.why{
+  height:40vh;
+  width:100%;
+  text-align: center;
+  justify-content: center;
+  margin-top: 100px;
+  margin-bottom: 20px;
+  color:#f0f0f0;
+}
+/* why end*/
+/* Cards start*/
+.icons-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 150px;
+  color:white;
+}
+
+.icons-content {
+  max-width: 40%;
+}
+
+.icons-content h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.icons-content p {
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #b482ff;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 1em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.card {
+  background-color: #1f1b37;
+  border-radius: 15px;
+  padding: 20px;
+  text-align: center;
+  width: 200px;
+}
+
+.card-image {
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  color: #00aaff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.card .quote {
+  margin-top: 15px;
+  font-style: italic;
+  font-size: 1em;
+}
+
+.card .name {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.card .name span {
+  color: #777;
+}
+/* Cards ends*/
 footer {
   margin-bottom: 0px;
   position: relative;
@@ -26,10 +174,12 @@ footer {
   padding: 15px;
   text-align: center;
   color: white; /* Ensure text stands out against the gradient */
+  border-top: .2px solid white;
 
   
 }
 footer .background-video {
+  display:none;
   position: absolute;
   top: 0; /* Stick the bottom of the video to the bottom of the parent */
   left: 0;
@@ -55,7 +205,8 @@ p{
 .footer-section {
   flex: 1 1 200px; /* Flexbox allows responsive design */
   margin: 10px;
-
+  padding-left: 10px;
+  background: rgba(255, 255, 255, 0.1);
 }
 .footer-container .footer-section1{
   width:20%;
@@ -94,7 +245,8 @@ p{
 .footer-section h4 {
   margin-bottom: 22px;
   font-size: 15px;
-  color: #4a90e2; /* Heading color */
+  color: #333; /* Heading color */
+  font-weight: 545;
 }
 
 .footer-section ul {
@@ -104,7 +256,7 @@ p{
 .footer-section li {
   margin: 10px 0;
   font-size: 12px;
-  font-weight: 550;
+  font-weight: 500;
   color: #f0f0f0; /* Link color */
 }
 
@@ -144,64 +296,55 @@ p{
   margin-bottom: 30px;
   background-image: url("Images/svg/10001.svg");
   
-}
- footer #footerText {
-  position: relative;
-  padding-top: 25px;
-  padding-left: 90px;
-  padding-right: 50px;
-  font-weight: 500;
-  line-height: 1.8; /* Better readability with line-height */
-  font-size: 12px;
-  word-spacing: 3px;
-  text-align: left;
-  color: #fff; 
-}
-
-.footer-last h6{
-  position:relative;
-  bottom: -58px;
-  text-align: center;
-  font-size: 14px;
-  padding-bottom: 0px;
-  font-weight: 500;
-  letter-spacing: 0.7px;
-}
 
 .footer-last {
-  position: relative; /* Positioning for absolutely positioned children */
-  overflow: hidden; /* Hides overflow from the video */
-  height: 30vh; /* Set this according to your layout needs */
-  margin-bottom: 0; /* Removes any bottom margin */
-  display: flex; /* Use flexbox for alignment */
-  flex-direction: column; /* Arrange children in a column */
-  justify-content: center; /* Center vertically */
-  align-items: flex-start; /* Align children to the start */
-  background-color: rgba(255, 0, 0, 0.8);
+  padding: 0px 0px;
+  position: relative;
+  overflow: hidden;
+  height: 30vh; /* Initial height at 30vh */
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid rgb(255, 255, 255);
+  transition: height 0.5s ease-in-out; /* Smooth transition when height changes */
 }
-footer a{
-  padding-top: 40px;
-  text-decoration: underline;
+}
+footer #footerText {
+ position: relative;
+ padding-top: 25px;
+ padding-left: 90px;
+ padding-right: 50px;
+ font-weight: 500;
+ line-height: 1.8; /* Better readability with line-height */
+ font-size: 12px;
+ word-spacing: 3px;
+ text-align: left;
+ color: gray; /* Text color */
+}
+
+.footer-last.expanded {
+  height: 80vh; /* Height after clicking "Read More" */
 }
 
 #dots {
-  display: inline; /* Display dots before the hidden text */
+  display: inline;
 }
 
 #moreText {
-  display: none; /* Hide the extra text by default */
+  display: none;
 }
 
 #readMoreLink {
   text-decoration: underline;
-  color: inherit; /* Keep the link color the same as the paragraph */
+  color: inherit;
   cursor: pointer;
-  display: inline; /* Ensure the link stays inline with the paragraph */
 }
 
 #readMoreLink:hover {
-  text-decoration: none; /* Optional: Remove underline on hover */
+  text-decoration: none;
 }
+
 
 .faq-container {
   height:5vh;
@@ -227,6 +370,10 @@ footer a{
 
 .close-btn:hover {
   color: red;
+}
+.copyright h6{
+  font-size: 13px;
+  color: gray;
 }
 
 /* Mobile Styles */
