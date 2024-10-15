@@ -18,19 +18,193 @@ main{
   height: 700vh;
   background-color: #100a29;
 }
+/* Cards start*/
+.icons-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 150px;
+  color:white;
+  padding-top: 150px;
+}
 
+.icons-content {
+  max-width: 40%;
+}
+
+.icons-content h1 {
+  font-size: 2.8em;
+  margin-bottom: 20px;
+  line-height: 50px;
+  font-weight: 900;
+}
+
+.icons-content p {
+  font-size: .9em;
+  font-weight: 550;
+  line-height: 1.6;
+  padding-right: 100px;
+  color: #777;
+}
+
+.badge {
+  display: inline-block;
+  background: linear-gradient(90deg, 
+  red, orange, yellow, green, blue, indigo, violet, red);
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: .8em;
+  margin-bottom: 20px;
+  font-weight: 300;
+  animation: borderAnimation 5s infinite linear, backgroundAnimation 5s infinite linear;
+  z-index: -1;
+}
+.section::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, 
+              red, orange, yellow, green, blue, indigo, violet, red);
+  background-size: 300% 100%;
+  z-index: -1;
+  animation: borderRun 4s linear infinite;
+  padding: 5px; /* Controls the border thickness */
+}
+
+@keyframes borderRun {
+  0% {
+      background-position: 0% 0;
+  }
+  100% {
+      background-position: 300% 0;
+  }
+}
+/* Border color animation */
+@keyframes borderAnimation {
+  0% {
+      border-color: rgb(255, 0, 0); /* Red */
+  }
+  33% {
+      border-color: rgb(0, 255, 0); /* Green */
+  }
+  66% {
+      border-color: rgb(0, 0, 255); /* Blue */
+  }
+  100% {
+      border-color: rgb(255, 0, 0); /* Back to Red */
+  }
+}
+
+/* Background color animation */
+@keyframes backgroundAnimation {
+  0% {
+      background-color: rgb(0, 0, 255); /* Blue */
+  }
+  33% {
+      background-color: rgb(255, 0, 0); /* Red */
+  }
+  66% {
+      background-color: rgb(0, 255, 0); /* Green */
+  }
+  100% {
+      background-color: rgb(0, 0, 255); /* Back to Blue */
+  }
+}
+.cards {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+.card {
+  background-color: #1f1b37;
+  border-radius: 15px;
+  padding: 0px 0px;
+  text-align: center;
+  height: 160px;
+  width: 220px;
+}
+
+.card-image {
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid white;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2em;
+  color: #00aaff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.card .quote {
+  margin-top: 15px;
+  font-style: Bold;
+  font-size: 1.1em;
+  font-weight: 700;
+  text-align: left;
+}
+
+.card .name {
+  margin-top: 10px;
+  font-weight: bold;
+  text-align: left;
+  padding-top: 10px;
+
+}
+
+.card .name span {
+  color: #777;
+}
+/* Cards ends*/
+/* why strat*/
+.why{
+  position: relative;
+  height:30vh;
+  width:100%;
+  text-align: center;
+  justify-content: center;
+  margin-top: 230px;
+  margin-bottom: 20px;
+  color:#f0f0f0;
+  border: 2px solid red;
+}
+.why h2{
+  font-weight: 780;
+  font-size: 3em;
+}
+.why p{
+  font-size: 1em;
+  line-height: 1.6;
+  margin:auto;
+}
+/* why end*/
 /*comparison sectionstarts here*/
 .comparison-section {
   padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1050px;
+  margin: 2px auto;
 }
 
 .comparison-table {
   width: 100%;
   border-collapse: collapse;
   background-color: rgba(255, 255, 255, 0.05); /* Transparent background */
-  border-radius: 10px;
+  border-radius: 19px;
   overflow: hidden;
   color:#f0f0f0;
 }
@@ -72,100 +246,70 @@ main{
   border-top-right-radius: 10px;
 }
 /*Comparitions section Ends here*/
-/* why strat*/
-.why{
-  height:40vh;
-  width:100%;
-  text-align: center;
-  justify-content: center;
-  margin-top: 100px;
-  margin-bottom: 20px;
-  color:#f0f0f0;
-}
-/* why end*/
-/* Cards start*/
-.icons-section {
-  display: flex;
-  justify-content: space-between;
-  padding: 50px 150px;
+/*Review section start here*/
+.container {
+  padding-top: 130px;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: center;
   color:white;
-}
-
-.icons-content {
-  max-width: 40%;
-}
-
-.icons-content h1 {
-  font-size: 3em;
-  margin-bottom: 20px;
-}
-
-.icons-content p {
-  font-size: 1.1em;
-  line-height: 1.6;
-}
-
-.badge {
-  display: inline-block;
-  background-color: #b482ff;
-  padding: 5px 10px;
-  border-radius: 15px;
-  font-size: 1em;
-  margin-bottom: 20px;
-  font-weight: bold;
-}
-
-.cards {
-  display: flex;
-  gap: 20px;
-  justify-content: flex-start;
-}
-
-.card {
-  background-color: #1f1b37;
-  border-radius: 15px;
-  padding: 20px;
   text-align: center;
-  width: 200px;
+  
 }
 
-.card-image {
-  position: relative;
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
-.card img {
-  width: 100%;
+header p {
+  font-size: 1rem;
+  color: #d3cccc;
+}
+
+.heart {
+  color: red;
+}
+
+.rating-overview {
+  margin: 20px 0;
+}
+
+.rating p {
+  font-size: 1.2rem;
+  margin: 5px 0;
+}
+
+.stars {
+  font-size: 1.5rem;
+  color: #00a572; /* Star color */
+}
+
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.review {
+  background-color: #292945;
+  padding: 20px;
   border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  text-align: left;
 }
 
-.play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 2em;
-  color: #00aaff;
-  background-color: rgba(0, 0, 0, 0.5);
-  padding: 10px;
-  border-radius: 50%;
-  cursor: pointer;
+.review .stars {
+  color: #00a572;
+  font-size: 1.2rem;
 }
 
-.card .quote {
-  margin-top: 15px;
-  font-style: italic;
-  font-size: 1em;
-}
-
-.card .name {
-  margin-top: 10px;
+.review .name {
   font-weight: bold;
+  margin: 10px 0;
 }
+/*Review section end here*/
 
-.card .name span {
-  color: #777;
-}
-/* Cards ends*/
 footer {
   margin-bottom: 0px;
   position: relative;
